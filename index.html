@@ -36,6 +36,19 @@
             --filter: invert(45%) sepia(69%) saturate(1873%) hue-rotate(356deg) brightness(93%) contrast(92%);
             --filter-2: invert(49%) sepia(87%) saturate(1413%) hue-rotate(348deg) brightness(96%) contrast(92%);
         }
+
+        .project-card {
+            min-height: 500px; /* samakan tinggi semua card */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-picture-wrapper img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
     </style>
 
     <!-- Google Tag Manager & Analytics -->
@@ -98,13 +111,9 @@
                         <span class="first_name">Meylin Tiflakhul</span>
                         <span class="last_name">Mubayyin</span>
                     </div>
-                    <div id="work" class="work">Informatics Engineering student</div>
+                    <div id="work" class="work">Mahasiswa Teknik Informatika</div>
                     <div class="tentang-saya-text desc-text">
-                        <p> Informatics Engineering student passionate about AI, Machine Learning, and Web Development.
-                        Experienced in building web-based solutions using Python, Flask, and TensorFlow. Proficient in
-                        developing AI systems, decision support tools, and real-time classification apps. Currently seeking
-                        an internship opportunity or entry-level role in AI, Data, or Software Engineering fields to contribute
-                        and grow professionally</p>
+                        <p>Fokus pada pengembangan web dan machine learning, dengan pengalaman membangun aplikasi full-stack, merancang RESTful API, dan mengelola basis data. Menguasai framework seperti Flask, TensorFlow, Flutter, dan Flutter GetX. Siap berkontribusi dalam pengembangan aplikasi nyata di bidang web dan AI.</p>
                     </div>
                     <div class="">
                         
@@ -128,7 +137,7 @@
 
     <section id="projek">
         <div class="container">
-            <div class="project-title" data-aos="fade-down">Projects</div>
+            <div class="project-title" data-aos="fade-down">Project</div>
             <div class="row justify-content-center gy-5 gx-5 animate-projek">
 
             <div class="col-lg-4">
@@ -158,13 +167,31 @@
                     onerror="this.onerror=null; this.src='https://placehold.co/240x240';"
                     alt="Skin Cancer">
                 </div>
-                <div class="project_name">Skin Cancer Detection Web App</div>
+                <div class="project_name">Aplikasi Web Klasifikasi Gambar Kanker Kulit</div>
                 <div class="project_desc desc-text">
-                    <p>Developed a web-based image classification system using TensorFlow and Flask to detect skin cancer from uploaded lesion images, providing early diagnosis assistance through AI-powered predictions.</p>
+                    <p>Mengembangkan aplikasi klasifikasi kanker kulit berbasis CNN, dengan antarmuka upload gambar dan hasil prediksi.</p>
+                    <p><em>Teknologi: TensorFlow, CNN, Flask, HTML, CSS</em></p>
                 </div>
                 <a rel="nofollow" target="_blank" href="https://github.com/meylintiff/skincancer.git" class="project_url porto-btn-primary">
                     <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
-                    View on GitHub
+                    Lihat di GitHub
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="project-card">
+                <div class="project-picture-wrapper">
+                    <img class="project_picture user-generated-img" src="C:\Users\mubay\OneDrive\Dokumen\portofolio\image\project-image03.png" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Desain Landing Page Creative Agency">
+                </div>
+                <div class="project_name">Website Profil Sekolah</div>
+                <div class="project_desc desc-text">
+                    <p>Membangun website sekolah dengan tampilan responsif dan navigasi mudah, sesuai kebutuhan klien.</p>
+                    <p><em>Teknologi: WordPress</em></p>
+                </div>
+                <a rel="nofollow" target="_blank" href="https://drive.google.com/drive/u/0/sear" class="project_url porto-btn-primary">
+                    <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
+                    Lihat di GitHub
                 </a>
                 </div>
             </div>
@@ -174,13 +201,14 @@
                 <div class="project-picture-wrapper">
                     <img class="project_picture user-generated-img" src="image\beauty.jpg" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Smart Travel">
                 </div>
-                <div class="project_name">Skincare Product Recommendation System</div>
+                <div class="project_name">Sistem Rekomendasi Produk Skincare</div>
                 <div class="project_desc desc-text">
-                    <p>Built a decision support system using the Simple Additive Weighting (SAW) method in Laravel to recommend skincare products based on user preferences and skin conditions.</p>
+                    <p>Menerapkan metode SAW untuk merekomendasikan produk skincare. Dibangun dengan Laravel dan integrasi MySQL.</p>
+                    <p><em>Teknologi: Laravel, Bootstrap, MySQL, SAW</em></p>
                 </div>
                 <a rel="nofollow" target="_blank" href="https://github.com/meylintiff/beauty.git" class="project_url porto-btn-primary">
                     <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
-                    View on GitHub
+                    Lihat di GitHub
                 </a>
                 </div>
             </div>
@@ -188,15 +216,20 @@
             <div class="col-lg-4">
                 <div class="project-card">
                 <div class="project-picture-wrapper">
+HEAD:index.html
                     <img class="project_picture user-generated-img" src="image\bg1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Desain Landing Page Creative Agency">
+
+                    <img class="project_picture user-generated-img" src="C:\Users\mubay\OneDrive\Dokumen\portofolio\image\bg1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Desain Landing Page Creative Agency">
+3b44cd7 (Update isi portofolio - bagian proyek):portofolio.html
                 </div>
-                <div class="project_name">Pilates Movement Detection Web App</div>
+                <div class="project_name">Pilapose - Deteksi dan Klasifikasi Gerakan Pilates</div>
                 <div class="project_desc desc-text">
-                    <p>Created a Flask-based web application that uses MediaPipe for real-time Pilates movement detection. Integrated with a chatbot to guide users and provide posture feedback during exercises.</p>
+                    <p>Sistem deteksi pose dan klasifikasi gerakan Pilates dengan Mediapipe dan Random Forest, dilengkapi chatbot edukatif berbasis NLP dan klasifikasi feedback dengan IndoBERT.</p>
+                    <p><em>Teknologi: Python, Mediapipe, Flask, Random Forest, IndoBERT</em></p>
                 </div>
                 <a rel="nofollow" target="_blank" href="https://drive.google.com/drive/u/0/sear" class="project_url porto-btn-primary">
                     <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
-                    View on GitHub
+                    Lihat di GitHub
                 </a>
                 </div>
             </div>
@@ -206,16 +239,35 @@
                 <div class="project-picture-wrapper">
                     <img class="project_picture user-generated-img" src="image\splash_background.jpg" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Desain App Online Shop">
                 </div>
-                <div class="project_name">Mobile App for Pilates Movement and Posture Classification</div>
+                <div class="project_name">PostureCare – Klasifikasi Postur & Gerakan Real-Time</div>
                 <div class="project_desc desc-text">
-                    <p>Developed a Flutter-based mobile application focused on detecting Pilates movements through the device’s camera. The app includes a posture classification feature to identify normal or problematic postures, helping users correct form and improve performance.</p>
+                    <p>Aplikasi real-time untuk klasifikasi postur tubuh dan gerakan menggunakan CNN & LSTM, terintegrasi dengan Firebase dan sistem login.</p>
+                    <p><em>Teknologi: Flask, Flutter, Firebase, CNN, LSTM, MongoDB, Mediapipe</em></p>
                 </div>
                 <a rel="nofollow" target="_blank" href="https://drive.google.com/drive/u/0/sear" class="project_url porto-btn-primary">
                     <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
-                    View on GitHub
+                    Lihat di GitHub
                 </a>
                 </div>
             </div>
+
+            <div class="col-lg-4">
+                <div class="project-card">
+                <div class="project-picture-wrapper">
+                    <img class="project_picture user-generated-img" src="C:\Users\mubay\OneDrive\Dokumen\portofolio\image\mockup.png" onerror="this.onerror=null; this.src='https://placehold.co/240x240';" alt="Desain App Online Shop">
+                </div>
+                <div class="project_name">Jungle Explorer – Game 2D</div>
+                <div class="project_desc desc-text">
+                    <p>Game platformer 2D dengan karakter, item, rintangan, dan level progresif.</p>
+                    <p><em>Teknologi: Unity, C#</em></p>
+                </div>
+                <a rel="nofollow" target="_blank" href="https://drive.google.com/drive/u/0/sear" class="project_url porto-btn-primary">
+                    <img class="me-1" src="https://suratplus.com/assets-3/portofolio/icon/4-arrow-up-right.svg" alt="">
+                    Lihat di GitHub
+                </a>
+                </div>
+            </div>
+
             </div>
         </div>
     </section>
